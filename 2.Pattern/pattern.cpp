@@ -539,29 +539,121 @@ int main()
 	// 	row++;
 
 	// }
+	/*
+	    1
+       23
+  	  456
+ 	78910
+	*/ 
+	// int row=1,col,n,count=1;
+	// cin>>n;
+	// while(row<=n)
+	// {
+	// 	// space
+	// 	int space=n+1-row;
+	// 	while(space)
+	// 	{
+	// 		cout<<" ";
+	// 		space--;
+	// 	}
+	// 	// number
+	// 	col=1;
+	// 	while(col<=row)
+	// 	{
+	// 		cout<<count;
+	// 		count++;
+	// 		col++;
+	// 	}
+	// 	cout<<endl;
+	// 	row++;
+	// }
 
-	int row=1,col,n,count=1;
+
+
+	// ====FRIST SOLUTION====
+	/* 
+	   1	
+	  121	
+	 12321
+	1234321
+	*/ 
+
+	// int row=1,n,col;
+	// cin>>n;
+	// while(row<=n)
+	// {
+		
+	// 	// space
+	// 	int space=n-row;
+	// 	while(space)
+	// 	{
+	// 		cout<<" ";
+	// 		space--;
+	// 	}
+	// 	// // number
+	// 	col=1;
+	// 	while(col<=row)
+	// 	{
+	// 		cout<<col;
+	// 		col++;
+	// 	}
+		
+	// 	// again number
+	// 	int count=row-1;
+	// 	if(row>1)
+	// 	{	
+	// 		while(count)
+	// 		{
+	// 			cout<<count<<"";
+	// 			count--;
+	// 		}
+			
+	// 	}	
+	// 	cout<<endl;
+	// 	row++;
+	// 	count++;
+	// }
+
+	// ====SECOND SOLUTION (OPTIMIZE) ====
+
+	/* 
+	   1	
+	  121	
+	 12321
+	1234321
+	*/ 
+
+	int row=1,n,col;
 	cin>>n;
 	while(row<=n)
 	{
+		
 		// space
-		int space=n+1-row;
+		int space=n-row;
 		while(space)
 		{
 			cout<<" ";
 			space--;
 		}
-		// number
+		// // number
 		col=1;
 		while(col<=row)
 		{
-			cout<<count;
-			count++;
+			cout<<col;
 			col++;
+		}
+		
+		// again number
+		int count=row-1;
+		while(count)
+		{
+			cout<<count<<"";
+			count--;
 		}
 		cout<<endl;
 		row++;
-
+	
+		
 	}
 
 } 
