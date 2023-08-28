@@ -490,27 +490,56 @@ int main()
     4444
 	
 	*/ 
+	// int row=1,col,n;
+	// cin>>n;
+	// while(row<=n){
+	// 	// space
+	// 	int space=n+1-row;
+	// 	while(space)
+	// 	{
+	// 		cout<<" ";
+	// 		space--;
+	// 	}
+	// 	// number
+	// 	col=1;
+	// 	while(col<=row)
+	// 	{
+	// 		cout<<row;
+	// 		col++;
+	// 	}
+	// 	cout<<endl;
+	// 	row++;
+	// }
+
+	/*
+	1234
+	 234
+	  34
+	   4
+	*/ 
 	int row=1,col,n;
 	cin>>n;
-	while(row<=n){
+	while(row<=n)
+	{
 		// space
-		int space=n+1-row;
-		while(space)
+		int space=1;
+		while(space<row)
 		{
 			cout<<" ";
-			space--;
+			space++;
 		}
 		// number
-		col=1;
-		while(col<=row)
+		col=row;
+		while(col<=n)
 		{
-			cout<<row;
+			cout<<col;
 			col++;
 		}
 		cout<<endl;
 		row++;
-	}
 
+
+	}
 
 } 
 
