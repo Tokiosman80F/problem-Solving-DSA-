@@ -369,23 +369,54 @@ int main()
 	  ***
 	 ****	
 	*/ 
+	// int row=1,col,n;
+	// cin>>n;
+	// while(row<=n)
+	// {
+	// 	// print space
+	// 	int space=n-row; 
+	// 	while(space)
+	// 	{
+	// 		cout<<" ";
+	// 		space--;
+	// 	}
+
+	// 	// print stars *
+	// 	col=1;
+	// 	while(col<=row)
+	// 	{
+	// 		cout<<"*";
+	// 		col++;
+	// 	}
+	// 	cout<<endl;
+	// 	row++;
+	// }
+
+	/*
+	****
+	***
+	**
+	*
+
+	*/ 
+
 	int row=1,col,n;
 	cin>>n;
 	while(row<=n)
 	{
-		// print space
-		int space=n-row; 
-		while(space)
-		{
-			cout<<" ";
-			space--;
-		}
-
-		// print stars *
-		col=1;
-		while(col<=row)
+		// star print
+		int star=n+1-row;
+		while(star)
 		{
 			cout<<"*";
+			star--;
+		}	
+
+		//space print
+		col=0;
+		while(col<row)
+		{
+			cout<<" ";
 			col++;
 		}
 		cout<<endl;
