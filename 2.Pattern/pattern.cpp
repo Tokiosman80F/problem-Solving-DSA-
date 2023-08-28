@@ -287,5 +287,81 @@ int main()
 	// 	row++;
 	// }
 
+	/*
+	A 
+	B C
+	C D E
+	E F G H
+	*/ 
+	// int row=1,col,n;
+	// cin>>n;
+	// while(row<=n)
+	// {
+	// 	col=1;
+	// 	while(col<=row)
+	// 	{
+	// 		char ch='A'+col+row-2;
+	// 		cout<<ch<<" ";
+			
+	// 		col++;
+	// 	}
+	// 	cout<<endl;
+	// 	row++;
+	// }
+	/*
+	D 
+	C D
+	B C D
+	A B C D
+	*/
+	
+	// int row=1,col,n,count;
+	// cin>>n;
+	// count=n;
+	// while(row<=n)
+	// {
+	// 	col=0;
+		
+
+	// 	while(col<row)
+	// 	{
+	// 		char ch='A'+count-1+col;
+	// 		cout<<ch<<" ";
+	// 		col++;
+	// 	}
+	// 	count--;
+	// 	cout<<endl;
+	// 	row++;
+	// }
+
+	/*
+ 		   * 	
+		 * *
+	   * * *
+	 * * * *
+	*/ 
+
+	int row=1,col,n,count;
+	cin>>n;
+	count=n;
+	while(row<=n)
+	{
+		col=1;
+		while(col<=n)
+		{
+			if(col>=count)
+			{
+				cout<<" *";
+			}
+			else{
+				cout<<" ";
+			}
+			col++;
+		}
+		cout<<endl;
+		count--;
+		row++;
+	}		
+
 } 
 
