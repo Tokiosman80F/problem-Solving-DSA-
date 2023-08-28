@@ -517,27 +517,50 @@ int main()
 	  34
 	   4
 	*/ 
-	int row=1,col,n;
+	// int row=1,col,n;
+	// cin>>n;
+	// while(row<=n)
+	// {
+	// 	// space
+	// 	int space=1;
+	// 	while(space<row)
+	// 	{
+	// 		cout<<" ";
+	// 		space++;
+	// 	}
+	// 	// number
+	// 	col=row;
+	// 	while(col<=n)
+	// 	{
+	// 		cout<<col;
+	// 		col++;
+	// 	}
+	// 	cout<<endl;
+	// 	row++;
+
+	// }
+
+	int row=1,col,n,count=1;
 	cin>>n;
 	while(row<=n)
 	{
 		// space
-		int space=1;
-		while(space<row)
+		int space=n+1-row;
+		while(space)
 		{
 			cout<<" ";
-			space++;
+			space--;
 		}
 		// number
-		col=row;
-		while(col<=n)
+		col=1;
+		while(col<=row)
 		{
-			cout<<col;
+			cout<<count;
+			count++;
 			col++;
 		}
 		cout<<endl;
 		row++;
-
 
 	}
 
