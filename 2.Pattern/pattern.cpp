@@ -460,25 +460,53 @@ int main()
 	  33
 	   4
 	*/ 
+	// int row=1,col,n;
+	// cin>>n;
+	// while(row<=n)
+	// {	
+	// 	// space
+	// 	int space=1;
+	// 	while(space<row)
+	// 	{
+	// 		cout<<" ";
+	// 		space++;
+	// 	}
+	// 	// number
+	// 	col=n-row+1;
+	// 	while(col)
+	// 	{
+	// 		cout<<row;
+	// 		col--;
+	// 	}
+		
+	// 	cout<<endl;
+	// 	row++;
+	// }
+
+	/* 
+	   1
+	  22
+	 333 
+    4444
+	
+	*/ 
 	int row=1,col,n;
 	cin>>n;
-	while(row<=n)
-	{	
+	while(row<=n){
 		// space
-		int space=1;
-		while(space<row)
+		int space=n+1-row;
+		while(space)
 		{
 			cout<<" ";
-			space++;
+			space--;
 		}
 		// number
-		col=n-row+1;
-		while(col)
+		col=1;
+		while(col<=row)
 		{
 			cout<<row;
-			col--;
+			col++;
 		}
-		
 		cout<<endl;
 		row++;
 	}
