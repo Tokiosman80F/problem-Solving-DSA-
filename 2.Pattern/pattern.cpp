@@ -335,33 +335,62 @@ int main()
 	// }
 
 	/*
- 		   * 	
-		 * *
-	   * * *
-	 * * * *
+ 	   *
+      * *
+     * * *
+    * * * *
 	*/ 
 
-	int row=1,col,n,count;
+	// int row=1,col,n,count;
+	// cin>>n;
+	// count=n;
+	// while(row<=n)
+	// {
+	// 	col=1;
+	// 	while(col<=n)
+	// 	{
+	// 		if(col>=count)
+	// 		{
+	// 			cout<<" *";
+	// 		}
+	// 		else{
+	// 			cout<<" ";
+	// 		}
+	// 		col++;
+	// 	}
+	// 	cout<<endl;
+	// 	count--;
+	// 	row++;
+	// }		
+
+	/*
+  		*	
+	   ** 	
+	  ***
+	 ****	
+	*/ 
+	int row=1,col,n;
 	cin>>n;
-	count=n;
 	while(row<=n)
 	{
-		col=1;
-		while(col<=n)
+		// print space
+		int space=n-row; 
+		while(space)
 		{
-			if(col>=count)
-			{
-				cout<<" *";
-			}
-			else{
-				cout<<" ";
-			}
+			cout<<" ";
+			space--;
+		}
+
+		// print stars *
+		col=1;
+		while(col<=row)
+		{
+			cout<<"*";
 			col++;
 		}
 		cout<<endl;
-		count--;
 		row++;
-	}		
+	}
 
 } 
 
