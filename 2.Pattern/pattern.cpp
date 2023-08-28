@@ -400,27 +400,58 @@ int main()
 
 	*/ 
 
+	// int row=1,col,n;
+	// cin>>n;
+	// while(row<=n)
+	// {
+	// 	// star print
+	// 	int star=n+1-row;
+	// 	while(star)
+	// 	{
+	// 		cout<<"*";
+	// 		star--;
+	// 	}	
+
+	// 	//space print
+	// 	col=0;
+	// 	while(col<row)
+	// 	{
+	// 		cout<<" ";
+	// 		col++;
+	// 	}
+	// 	cout<<endl;
+	// 	row++;
+	// }
+
+	/*
+	 ****
+  ***
+   **
+    *
+
+
+	*/ 
+
 	int row=1,col,n;
 	cin>>n;
 	while(row<=n)
 	{
-		// star print
-		int star=n+1-row;
-		while(star)
-		{
-			cout<<"*";
-			star--;
-		}	
-
-		//space print
+		// space
 		col=0;
 		while(col<row)
 		{
 			cout<<" ";
 			col++;
 		}
+		int star=n-row+1;
+		while(star)
+		{
+			cout<<"*";
+			star--;
+		}
 		cout<<endl;
 		row++;
+		// start
 	}
 
 } 
