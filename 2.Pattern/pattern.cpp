@@ -623,38 +623,71 @@ int main()
 	1234321
 	*/ 
 
-	int row=1,n,col;
+	// int row=1,n,col;
+	// cin>>n;
+	// while(row<=n)
+	// {
+		
+	// 	// space
+	// 	int space=n-row;
+	// 	while(space)
+	// 	{
+	// 		cout<<" ";
+	// 		space--;
+	// 	}
+	// 	// // number
+	// 	col=1;
+	// 	while(col<=row)
+	// 	{
+	// 		cout<<col;
+	// 		col++;
+	// 	}
+		
+	// 	// again number
+	// 	int count=row-1;
+	// 	while(count)
+	// 	{
+	// 		cout<<count<<"";
+	// 		count--;
+	// 	}
+	// 	cout<<endl;
+	// 	row++;
+	
+		
+	// }
+
+	int row=1,col,n,count=2;
 	cin>>n;
 	while(row<=n)
 	{
-		
-		// space
-		int space=n-row;
-		while(space)
-		{
-			cout<<" ";
-			space--;
-		}
-		// // number
+		int value=n-row+1;
 		col=1;
-		while(col<=row)
+		while(col<=value)
 		{
 			cout<<col;
 			col++;
 		}
+
+		// stars
+			if(row>=2)
+			{
+			int ans=count*row-2;
+			while(ans)
+			{
+				cout<<"*";
+				ans--;
+			}
+			}
 		
-		// again number
-		int count=row-1;
-		while(count)
-		{
-			cout<<count<<"";
-			count--;
+		while(value)
+		{ 
+			cout<<value;
+			value--;		
 		}
 		cout<<endl;
 		row++;
-	
-		
-	}
 
+	}
+	
 } 
 
