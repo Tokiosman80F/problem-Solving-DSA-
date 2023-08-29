@@ -109,19 +109,46 @@ int main(){
 	* * * *
 	
 	*/
-	int input,row=1;
-	cin>>input;
-	while(row<=input)
-	{	
-		int col=1;
-		while(col<=input)
-		{
-			cout<<row<<" ";
-			col++;
-		}
+	// int input,row=1;
+	// cin>>input;
+	// while(row<=input)
+	// {	
+	// 	int col=1;
+	// 	while(col<=input)
+	// 	{
+	// 		cout<<row<<" ";
+	// 		col++;
+	// 	}
 		
-		cout<<endl;
-		row++;
-	}
+	// 	cout<<endl;
+	// 	row++;
+	// }
+
+	// ---QUESTION---
+	// ---1---
+	
+	// int a,b=1;
+	// a=10;
+	// if(++a)
+	// 	cout<<"this=>"<<b;
+	// else cout<<++b;
+	
+	// ---2---
+	// 	int a=1,b=2;
+	// 	if(a-->0 && ++b>2)
+	// 		cout<<"state1";
+	// 	else cout<<"state-2";
+	// 	cout<<endl;
+	// 	cout<<a<<"-"<<b;
+	// 	cout<<endl;
+	// // ---3---
+	// 	int number=3;
+	// 	cout<<(25*(++number))<<endl;
+	// ---4---
+		int a=1,b=a++,c=++a;
+		cout<<b<<endl;
+		cout<<c;
+	// ---5---
+
 
 }
