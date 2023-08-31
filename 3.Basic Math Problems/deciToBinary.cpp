@@ -15,7 +15,7 @@ int main(){
 		cout<<"n=> "<<n<<endl;
 		// adding up all bits
 		ans=(bit*pow(10,i))+ans;
-		i++;
+		i++; 
 	}
-	cout<<"Answer"<<ans;
+	cout<<"Answer : "<<ans;
 }
